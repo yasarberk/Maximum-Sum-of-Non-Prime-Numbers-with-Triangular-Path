@@ -1,5 +1,7 @@
 def checkPrimeNumber(number):
-    if number > 1:
+    if (type(number) != int):
+        return "Number is not in range! Number must be integer!"
+    elif number > 1:
         for i in range(2, number):
             if number % i == 0:
                 return False
